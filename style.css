@@ -1,0 +1,153 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    color: white;
+    background: #1d191f;
+}
+
+#statistics {
+    display: flex;
+    flex-direction: column;
+}
+
+#container {
+    display: flex;
+    height: 100vh;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#container > div {
+    border: 1px solid #8d8d8d;
+    border-top: 0;
+    border-bottom: 0;
+    padding: 20px;
+}
+
+#left-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#astolfo-image {
+    height: 100%;
+    cursor: pointer;
+    transition: all 100ms ease-in-out;
+    border-radius: 50px;
+    filter: drop-shadow(0 0 0.75rem rgb(255, 255, 255));
+}
+
+#astolfo-image:hover {
+    transition: all 60ms ease-in-out;
+    transform: scale(1.01);
+}
+
+#astolfo-image:active {
+    transition: all 30ms ease-in-out;
+    transform: scale(1.02);
+}
+
+#reseting {
+    margin-bottom: -50px;
+    margin-left: 1550px;
+}
+
+#right-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+#shops {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 0px;
+    padding: 20px;
+    margin-left: -25px;
+}
+
+#status {
+    font-size: 22px;
+    display: flex;
+    flex-direction: row;
+    gap: 550px;
+    align-items: flex-start;
+    margin-top: 10px;
+    margin-bottom: -30px;
+}
+
+#items {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    overflow-y: scroll;
+    height: 720px;
+    padding: 10px;
+}
+
+#statistics {
+    font-size: 22px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.item {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    border: 1px solid #8d8d8d;
+    border-radius: 10px;
+    padding: 15px;
+    width: 500px;
+}
+
+.item img {
+    border-radius: 10px;
+    filter: drop-shadow(0 0 0.25rem rgb(167, 155, 155));
+}
+
+.item .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+button {
+    height: 40px;
+    font-size: 16px;
+    outline: none;
+    border: 1px solid #8d8d8d;
+    border-radius: 10px;
+    cursor: pointer;
+    background: #2b232f;
+    color: white;
+    transition: all 100ms ease-in-out;
+    font-weight: 600;
+    line-height: 16px;
+    width: 330px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #3a2944;
+    transition: all 30ms ease-in-out;
+    transform: scale(1.015);
+}
+
+button:active {
+    background: rgb(80, 62, 87);
+}
